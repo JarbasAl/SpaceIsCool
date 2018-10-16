@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>stars - space</title>
+  <title>satellites - space</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "stars";
-    var mkdocs_page_input_path = "space.bodies.stars.md";
+    var mkdocs_page_name = "satellites";
+    var mkdocs_page_input_path = "space.satellites.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -67,9 +67,45 @@
 		
     <span class="caption-text">satellites</span>
     <ul class="subnav">
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../space.satellites/">satellites</a>
+    <a class="current" href="./">satellites</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#module-spacesatellites">Module space.satellites</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#probe95distances">probe_distances</a></li>
+        
+            <li><a class="toctree-l4" href="#probes">probes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#module-spacesatellitesepic">Module space.satellites.EPIC</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#epic">EPIC</a></li>
+        
+            <li><a class="toctree-l4" href="#epic95listing">EPIC_listing</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#module-spacesatelliteslandsat8">Module space.satellites.landsat8</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#assets">assets</a></li>
+        
+            <li><a class="toctree-l4" href="#imagery">imagery</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -99,39 +135,9 @@
                     
     <a class="" href="../space.bodies.earth/">earth</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">stars</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#module-spacebodiesstars">Module space.bodies.stars</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#search95star">search_star</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95common95name">stars_by_common_name</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95constellation">stars_by_constellation</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95designation">stars_by_designation</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95distance">stars_by_distance</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95magnitude">stars_by_magnitude</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95radial95velocity">stars_by_radial_velocity</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95radius">stars_by_radius</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95solar95mass">stars_by_solar_mass</a></li>
-        
-            <li><a class="toctree-l4" href="#stars95by95spectral95class">stars_by_spectral_class</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../space.bodies.stars/">stars</a>
                 </li>
                 <li class="">
                     
@@ -201,11 +207,11 @@
     
       
         
-          <li>bodies &raquo;</li>
+          <li>satellites &raquo;</li>
         
       
     
-    <li>stars</li>
+    <li>satellites</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -215,51 +221,47 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="module-spacebodiesstars">Module space.bodies.stars</h2>
-<h3 id="search95star">search_star</h3>
-<p><code>def search_star(query, table='stars')</code></p>
-<p>http://www.astropical.space/astrodb/apiref.php</p>
-<p>query the HIP stars database</p>
-<p>Currently, only the Hipparcos Star stars (down to mag 6.5) and Nearby Stars (139 stars) tables are connected to this API.</p>
-<p>table: stars or nearby</p>
+                <h2 id="module-spacesatellites">Module space.satellites</h2>
+<h3 id="probe95distances">probe_distances</h3>
+<p><code>def probe_distances()</code></p>
+<h3 id="probes">probes</h3>
+<p><code>def probes()</code></p>
+<h2 id="module-spacesatellitesepic">Module space.satellites.EPIC</h2>
+<h3 id="epic">EPIC</h3>
+<p><code>def EPIC(natural=True, date=None)</code></p>
+<p>The EPIC API provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument. Uniquely positioned at the Earth-Sun Lagrange point, EPIC provides full disc imagery of the Earth and captures unique perspectives of certain astronomical events such as lunar transits using a 2048x2048 pixel CCD (Charge Coupled Device) detector coupled to a 30-cm aperture Cassegrain telescope.</p>
+<p>Args:</p>
+<pre><code>natural (bool): natural color or enhanced.
+
+date (str): Date to look up imagery, YYYY-MM-DD
+</code></pre>
+<p>Returns:</p>
+<pre><code>Dictionary object containing image data.
+</code></pre>
+<h3 id="epic95listing">EPIC_listing</h3>
+<p><code>def EPIC_listing(natural=True, available=True)</code></p>
+<p>Natural Color       Metadata on the most recent date of natural color imagery.</p>
+<p>ost Recent Enhanced Color   Metadata on the most recent date of enhanced color imagery.The EPIC API provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument.</p>
+<p>Uniquely positioned at the Earth-Sun Lagrange point, EPIC provides full disc imagery of the Earth and captures</p>
+<p>unique perspectives of certain astronomical events such as lunar transits using a 2048x2048 pixel</p>
+<p>CCD (Charge Coupled Device) detector coupled to a 30-cm aperture Cassegrain telescope.</p>
+<p>:param natural: (bool) if False return enhanced imagery, if True return natural</p>
+<p>:param available: (bool) Retrieve a listing of all dates with available natural color imagery or all dates if false</p>
 <p>:return: </p>
-<h3 id="stars95by95common95name">stars_by_common_name</h3>
-<p><code>def stars_by_common_name(star_name)</code></p>
-<p>:param star_name:str star name</p>
-<p>:return: </p>
-<h3 id="stars95by95constellation">stars_by_constellation</h3>
-<p><code>def stars_by_constellation(constelation)</code></p>
-<p>:param constelation: umi = ursa minor</p>
-<p>:return:</p>
-<h3 id="stars95by95designation">stars_by_designation</h3>
-<p><code>def stars_by_designation(designation)</code></p>
-<p>:param designation:str star name</p>
-<p>:return: </p>
-<h3 id="stars95by95distance">stars_by_distance</h3>
-<p><code>def stars_by_distance(max_light_years)</code></p>
-<p>:param max_light_years: int</p>
-<p>:return:</p>
-<h3 id="stars95by95magnitude">stars_by_magnitude</h3>
-<p><code>def stars_by_magnitude(magnitude)</code></p>
-<p>:param magnitude: int</p>
-<p>:return:</p>
-<h3 id="stars95by95radial95velocity">stars_by_radial_velocity</h3>
-<p><code>def stars_by_radial_velocity(min_velocity)</code></p>
-<p>:param min_velocity: int km/s</p>
-<p>:return: </p>
-<h3 id="stars95by95radius">stars_by_radius</h3>
-<p><code>def stars_by_radius(min_radius)</code></p>
-<p>:param min_radius: int solar radius</p>
-<p>:return: </p>
-<h3 id="stars95by95solar95mass">stars_by_solar_mass</h3>
-<p><code>def stars_by_solar_mass(min_mass)</code></p>
-<p>:param min_mass: int solar masses</p>
-<p>:return: </p>
-<h3 id="stars95by95spectral95class">stars_by_spectral_class</h3>
-<p><code>def stars_by_spectral_class(spectral_class)</code></p>
-<p>valid classes are are, o, b, a, f, g, k, m</p>
-<p>:param spectral_class: str</p>
-<p>:return: </p>
+<h2 id="module-spacesatelliteslandsat8">Module space.satellites.landsat8</h2>
+<h3 id="assets">assets</h3>
+<p><code>def assets(lon=None, lat=None, begin=None, end=None)</code></p>
+<p>lat float   n/a     Latitude</p>
+<p>lon float   n/a     Longitude</p>
+<p>begin       YYYY-MM-DD      n/a     beginning of date range</p>
+<p>end         YYYY-MM-DD      today   end of date range  (optional) </p>
+<h3 id="imagery">imagery</h3>
+<p><code>def imagery(lon=None, lat=None, dim=None, date=None, cloud_score=None)</code></p>
+<p>lat float   n/a     Latitude</p>
+<p>lon float   n/a     Longitude</p>
+<p>dim float   0.025   width and height of image in degrees</p>
+<p>date        YYYY-MM-DD  today       date of image ----if not supplied, then the most recent image (i.e., closest to today) is returned</p>
+<p>cloud_score bool    False   calculate the percentage of the image covered by clouds </p>
               
             </div>
           </div>
@@ -267,10 +269,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../space.bodies.asteroids/" class="btn btn-neutral float-right" title="asteroids">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../space.satellites.EPIC/" class="btn btn-neutral float-right" title="EPIC">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../space.bodies.earth/" class="btn btn-neutral" title="earth"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../space.weather/" class="btn btn-neutral" title="weather"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -296,10 +298,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../space.bodies.earth/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../space.weather/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../space.bodies.asteroids/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../space.satellites.EPIC/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
