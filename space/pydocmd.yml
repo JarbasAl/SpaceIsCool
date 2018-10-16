@@ -1,4 +1,9 @@
-site_name: Welcome to pydoc-markdown
+site_name: Space Is Cool
 generate:
 pages:
 - Home: index.md << ../README.md
+- space: ../docs/space.md
+- bodies: ../docs/bodies.md
+- satellites: ../docs/satellites.md
+- research: ../docs/research.md
+- imagery: ../docs/imagery.md
