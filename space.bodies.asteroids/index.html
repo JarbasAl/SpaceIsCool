@@ -55,62 +55,22 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">bodies</span>
+    <span class="caption-text">satellites</span>
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../space.bodies.exoplanets/">exoplanets</a>
+    <a class="" href="../space.satellites.landsat8/">landsat8</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../space.bodies.earth/">earth</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../space.bodies.stars/">stars</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">asteroids</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#module-spacebodiesasteroids">Module space.bodies.asteroids</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#routine-neo95browse">Routine neo_browse</a></li>
-        
-            <li><a class="toctree-l4" href="#routine-neo95feed">Routine neo_feed</a></li>
-        
-            <li><a class="toctree-l4" href="#routine-neo95feed95today">Routine neo_feed_today</a></li>
-        
-            <li><a class="toctree-l4" href="#routine-neo95lookup">Routine neo_lookup</a></li>
-        
-            <li><a class="toctree-l4" href="#routine-neo95sentry">Routine neo_sentry</a></li>
-        
-            <li><a class="toctree-l4" href="#routine-sentry95lookup">Routine sentry_lookup</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../space.satellites.EPIC/">EPIC</a>
                 </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../space.spacex/">spacex</a>
 	    </li>
           
             <li class="toctree-l1">
 		
     <a class="" href="../space.weather/">weather</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../space.astronomy/">astronomy</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -130,22 +90,62 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">satellites</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../space.satellites.EPIC/">EPIC</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../space.satellites.landsat8/">landsat8</a>
-                </li>
-    </ul>
+    <a class="" href="../space.spacex/">spacex</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.astronomy/">astronomy</a>
 	    </li>
           
             <li class="toctree-l1">
 		
     <a class="" href="../space.sun/">sun</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">bodies</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../space.bodies.exoplanets/">exoplanets</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">asteroids</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#module-spacebodiesasteroids">Module space.bodies.asteroids</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#neo95browse">neo_browse</a></li>
+        
+            <li><a class="toctree-l4" href="#neo95feed">neo_feed</a></li>
+        
+            <li><a class="toctree-l4" href="#neo95feed95today">neo_feed_today</a></li>
+        
+            <li><a class="toctree-l4" href="#neo95lookup">neo_lookup</a></li>
+        
+            <li><a class="toctree-l4" href="#neo95sentry">neo_sentry</a></li>
+        
+            <li><a class="toctree-l4" href="#sentry95lookup">sentry_lookup</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.earth/">earth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.stars/">stars</a>
+                </li>
+    </ul>
 	    </li>
           
         </ul>
@@ -185,31 +185,31 @@
             <div class="section">
               
                 <h2 id="module-spacebodiesasteroids">Module space.bodies.asteroids</h2>
-<h3 id="routine-neo95browse">Routine neo_browse</h3>
+<h3 id="neo95browse">neo_browse</h3>
 <p><code>def neo_browse()</code></p>
 <p>Browse the overall Asteroid data-set
 :return: </p>
-<h3 id="routine-neo95feed">Routine neo_feed</h3>
+<h3 id="neo95feed">neo_feed</h3>
 <p><code>def neo_feed(start_date=None, end_date=None)</code></p>
 <p>NeoWs (Near Earth Object Web Service) is a RESTful web service for near earth Asteroid information. With NeoWs a user can: search_exoplanet for Asteroids based on their closest approach date to Earth, lookup a specific Asteroid with its NASA JPL small body id, as well as browse the overall data-set.</p>
 <p>Data-set: All the data is from the NASA JPL Asteroid team (http://neo.jpl.nasa.gov/).</p>
 <p>:param start_date: YYYY-MM-DD       none    Starting date for asteroid search_exoplanet
 :param end_date: YYYY-MM-DD 7 days after start_date Ending date for asteroid search_exoplanet
 :return: </p>
-<h3 id="routine-neo95feed95today">Routine neo_feed_today</h3>
+<h3 id="neo95feed95today">neo_feed_today</h3>
 <p><code>def neo_feed_today(detailed=True)</code></p>
 <p>:return: </p>
-<h3 id="routine-neo95lookup">Routine neo_lookup</h3>
+<h3 id="neo95lookup">neo_lookup</h3>
 <p><code>def neo_lookup(asteroid_id)</code></p>
 <p>Lookup a specific Asteroid based on its NASA JPL small body (SPK-ID) ID</p>
 <p>:param: asteroid_id int     Asteroid SPK-ID correlates to the NASA JPL small body
 :return: </p>
-<h3 id="routine-neo95sentry">Routine neo_sentry</h3>
+<h3 id="neo95sentry">neo_sentry</h3>
 <p><code>def neo_sentry(is_active=True, page=0, size=50)</code></p>
 <p>Retrieves Near Earth Objects listed in the NASA sentry data set
 :param is_active: show current list of Sentry objects, or show removed Sentry objects
 :return: </p>
-<h3 id="routine-sentry95lookup">Routine sentry_lookup</h3>
+<h3 id="sentry95lookup">sentry_lookup</h3>
 <p><code>def sentry_lookup(asteroid_id)</code></p>
 <p>Retrieves Sentry Near Earth Object by ID</p>
 <p>:param: asteroid_id str ID of NearEarth object. ID can be SPK_ID, Asteroid des (designation) or Sentry ID
@@ -221,10 +221,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../space.spacex/" class="btn btn-neutral float-right" title="spacex">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../space.bodies.earth/" class="btn btn-neutral float-right" title="earth">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../space.bodies.stars/" class="btn btn-neutral" title="stars"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../space.bodies.exoplanets/" class="btn btn-neutral" title="exoplanets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -250,10 +250,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../space.bodies.stars/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../space.bodies.exoplanets/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../space.spacex/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../space.bodies.earth/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -55,30 +55,17 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">bodies</span>
+    <span class="caption-text">satellites</span>
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../space.bodies.exoplanets/">exoplanets</a>
+    <a class="" href="../space.satellites.landsat8/">landsat8</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../space.bodies.earth/">earth</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../space.bodies.stars/">stars</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../space.bodies.asteroids/">asteroids</a>
+    <a class="" href="../space.satellites.EPIC/">EPIC</a>
                 </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../space.spacex/">spacex</a>
 	    </li>
           
             <li class="toctree-l1 current">
@@ -90,35 +77,30 @@
     
         <ul>
         
-            <li><a class="toctree-l3" href="#routine-wsa95enlilsimulation">Routine WSA_EnlilSimulation</a></li>
+            <li><a class="toctree-l3" href="#wsa95enlilsimulation">WSA_EnlilSimulation</a></li>
         
-            <li><a class="toctree-l3" href="#routine-coronal95mass95ejection95analysis">Routine coronal_mass_ejection_analysis</a></li>
+            <li><a class="toctree-l3" href="#coronal95mass95ejection95analysis">coronal_mass_ejection_analysis</a></li>
         
-            <li><a class="toctree-l3" href="#routine-coronal95mass95ejections">Routine coronal_mass_ejections</a></li>
+            <li><a class="toctree-l3" href="#coronal95mass95ejections">coronal_mass_ejections</a></li>
         
-            <li><a class="toctree-l3" href="#routine-geomagnetic95storms">Routine geomagnetic_storms</a></li>
+            <li><a class="toctree-l3" href="#geomagnetic95storms">geomagnetic_storms</a></li>
         
-            <li><a class="toctree-l3" href="#routine-high95speed95stream">Routine high_speed_stream</a></li>
+            <li><a class="toctree-l3" href="#high95speed95stream">high_speed_stream</a></li>
         
-            <li><a class="toctree-l3" href="#routine-interplanetary95shock">Routine interplanetary_shock</a></li>
+            <li><a class="toctree-l3" href="#interplanetary95shock">interplanetary_shock</a></li>
         
-            <li><a class="toctree-l3" href="#routine-magnetopause95crossing">Routine magnetopause_crossing</a></li>
+            <li><a class="toctree-l3" href="#magnetopause95crossing">magnetopause_crossing</a></li>
         
-            <li><a class="toctree-l3" href="#routine-radiation95belt95enhancement">Routine radiation_belt_enhancement</a></li>
+            <li><a class="toctree-l3" href="#radiation95belt95enhancement">radiation_belt_enhancement</a></li>
         
-            <li><a class="toctree-l3" href="#routine-solar95energetic95particles">Routine solar_energetic_particles</a></li>
+            <li><a class="toctree-l3" href="#solar95energetic95particles">solar_energetic_particles</a></li>
         
-            <li><a class="toctree-l3" href="#routine-solar95flare">Routine solar_flare</a></li>
+            <li><a class="toctree-l3" href="#solar95flare">solar_flare</a></li>
         
         </ul>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../space.astronomy/">astronomy</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -138,22 +120,40 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">satellites</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../space.satellites.EPIC/">EPIC</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../space.satellites.landsat8/">landsat8</a>
-                </li>
-    </ul>
+    <a class="" href="../space.spacex/">spacex</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.astronomy/">astronomy</a>
 	    </li>
           
             <li class="toctree-l1">
 		
     <a class="" href="../space.sun/">sun</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">bodies</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../space.bodies.exoplanets/">exoplanets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.asteroids/">asteroids</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.earth/">earth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.stars/">stars</a>
+                </li>
+    </ul>
 	    </li>
           
         </ul>
@@ -189,13 +189,13 @@
             <div class="section">
               
                 <h2 id="module-spaceweather">Module space.weather</h2>
-<h3 id="routine-wsa95enlilsimulation">Routine WSA_EnlilSimulation</h3>
+<h3 id="wsa95enlilsimulation">WSA_EnlilSimulation</h3>
 <p><code>def WSA_EnlilSimulation(start_date=None, end_date=None)</code></p>
 <p>WSA+EnlilSimulation</p>
 <p>startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-coronal95mass95ejection95analysis">Routine coronal_mass_ejection_analysis</h3>
+<h3 id="coronal95mass95ejection95analysis">coronal_mass_ejection_analysis</h3>
 <p><code>def coronal_mass_ejection_analysis(start_date=None, end_date=None, most_accurate_only=True, complete_entry_only=True, speed=0, half_angle=0, catalog='ALL', keyword='NONE')</code></p>
 <p>:param start_date: default 30 days prior to current UTC time
 :param end_date: default to current UTC time
@@ -206,25 +206,25 @@ endDate: default to current UTC date
 :param catalog:default is set to ALL (choices: ALL, SWRC_CATALOG, JANG_ET_AL_CATALOG)
 :param keyword: default is set to NONE (example choices: swpc_annex)
 :return: </p>
-<h3 id="routine-coronal95mass95ejections">Routine coronal_mass_ejections</h3>
+<h3 id="coronal95mass95ejections">coronal_mass_ejections</h3>
 <p><code>def coronal_mass_ejections(start_date=None, end_date=None)</code></p>
 <p>Coronal Mass Ejection (CME)
 startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-geomagnetic95storms">Routine geomagnetic_storms</h3>
+<h3 id="geomagnetic95storms">geomagnetic_storms</h3>
 <p><code>def geomagnetic_storms(start_date=None, end_date=None)</code></p>
 <p>Coronal Mass Ejection (CME)
 startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-high95speed95stream">Routine high_speed_stream</h3>
+<h3 id="high95speed95stream">high_speed_stream</h3>
 <p><code>def high_speed_stream(start_date=None, end_date=None)</code></p>
 <p>Hight Speed Stream (HSS)</p>
 <p>startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-interplanetary95shock">Routine interplanetary_shock</h3>
+<h3 id="interplanetary95shock">interplanetary_shock</h3>
 <p><code>def interplanetary_shock(start_date=None, end_date=None, location='ALL', catalog='ALL')</code></p>
 <p>Coronal Mass Ejection (CME)
 startDate: default to 30 days prior to current UTC date
@@ -232,25 +232,25 @@ endDate: default to current UTC date
 location: default to ALL (choices: Earth, MESSENGER, STEREO A, STEREO B)
 catalog: default to ALL (choices: SWRC_CATALOG, WINSLOW_MESSENGER_ICME_CATALOG)
 :return: </p>
-<h3 id="routine-magnetopause95crossing">Routine magnetopause_crossing</h3>
+<h3 id="magnetopause95crossing">magnetopause_crossing</h3>
 <p><code>def magnetopause_crossing(start_date=None, end_date=None)</code></p>
 <p>Magnetopause Crossing (MPC)</p>
 <p>startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-radiation95belt95enhancement">Routine radiation_belt_enhancement</h3>
+<h3 id="radiation95belt95enhancement">radiation_belt_enhancement</h3>
 <p><code>def radiation_belt_enhancement(start_date=None, end_date=None)</code></p>
 <p>Radiation Belt Enhancement (RBE)</p>
 <p>startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-solar95energetic95particles">Routine solar_energetic_particles</h3>
+<h3 id="solar95energetic95particles">solar_energetic_particles</h3>
 <p><code>def solar_energetic_particles(start_date=None, end_date=None)</code></p>
 <p>Solar Energetic Particle (SEP)</p>
 <p>startDate: default to 30 days prior to current UTC date
 endDate: default to current UTC date
 :return: </p>
-<h3 id="routine-solar95flare">Routine solar_flare</h3>
+<h3 id="solar95flare">solar_flare</h3>
 <p><code>def solar_flare(start_date=None, end_date=None)</code></p>
 <p>Solar Flare (FLR)</p>
 <p>startDate: default to 30 days prior to current UTC date
@@ -263,10 +263,10 @@ endDate: default to current UTC date
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../space.astronomy/" class="btn btn-neutral float-right" title="astronomy">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../space.research.spacex/" class="btn btn-neutral float-right" title="spacex">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../space.spacex/" class="btn btn-neutral" title="spacex"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../space.satellites.EPIC/" class="btn btn-neutral" title="EPIC"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -292,10 +292,10 @@ endDate: default to current UTC date
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../space.spacex/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../space.satellites.EPIC/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../space.astronomy/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../space.research.spacex/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
