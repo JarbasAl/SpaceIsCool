@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>exoplanets - space</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "exoplanets";
+    var mkdocs_page_input_path = "space.bodies.exoplanets.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> space</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.astronomy/">astronomy</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">space.research</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../space.research.genelab/">genelab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.research.spacex/">spacex</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.spacex/">spacex</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.sun/">sun</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">space.bodies</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">exoplanets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#module-spacebodiesexoplanets">Module space.bodies.exoplanets</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#routine-all95cold95zone95planets">Routine all_cold_zone_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95confirmed95planets">Routine all_confirmed_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95a95stars">Routine all_exoplanet_around_a_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95b95stars">Routine all_exoplanet_around_b_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95f95stars">Routine all_exoplanet_around_f_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95g95stars">Routine all_exoplanet_around_g_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95k95stars">Routine all_exoplanet_around_k_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95m95stars">Routine all_exoplanet_around_m_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95exoplanet95around95o95stars">Routine all_exoplanet_around_o_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95hot95zone95planets">Routine all_hot_zone_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95jovian95planets">Routine all_jovian_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95microlensing95planets95with95time95series">Routine all_microlensing_planets_with_time_series</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95neptunian95planets">Routine all_neptunian_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95subterran95planets">Routine all_subterran_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95superterran95planets">Routine all_superterran_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95terran95planets">Routine all_terran_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95trappist95planets">Routine all_trappist_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95unconfirmed95planets">Routine all_unconfirmed_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-all95warm95zone95planets">Routine all_warm_zone_planets</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-confirmed95planets95in95kepler95field">Routine confirmed_planets_in_kepler_field</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-confirmed95planets95in95mission95star95list">Routine confirmed_planets_in_mission_star_list</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-confirmed95planets95that95transit95host95stars">Routine confirmed_planets_that_transit_host_stars</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95class">Routine exoplanet_by_class</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95distance">Routine exoplanet_by_distance</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95esi">Routine exoplanet_by_esi</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95mass">Routine exoplanet_by_mass</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95name">Routine exoplanet_by_name</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95radius">Routine exoplanet_by_radius</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95star95type">Routine exoplanet_by_star_type</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-exoplanet95by95zone">Routine exoplanet_by_zone</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-k295targets95campaign9">Routine k2_targets_campaign9</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-planetary95candidates">Routine planetary_candidates</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-search95exoplanet">Routine search_exoplanet</a></li>
+        
+            <li><a class="toctree-l4" href="#routine-stars95known95to95host95exoplanets">Routine stars_known_to_host_exoplanets</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.earth/">earth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.asteroids/">asteroids</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.bodies.stars/">stars</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">space.satellites</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../space.satellites.landsat8/">landsat8</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../space.satellites.EPIC/">EPIC</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../space.weather/">weather</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">space</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>space.bodies &raquo;</li>
+        
+      
+    
+    <li>exoplanets</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="module-spacebodiesexoplanets">Module space.bodies.exoplanets</h2>
+<h3 id="routine-all95cold95zone95planets">Routine all_cold_zone_planets</h3>
+<p><code>def all_cold_zone_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95confirmed95planets">Routine all_confirmed_planets</h3>
+<p><code>def all_confirmed_planets()</code></p>
+<h3 id="routine-all95exoplanet95around95a95stars">Routine all_exoplanet_around_a_stars</h3>
+<p><code>def all_exoplanet_around_a_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95b95stars">Routine all_exoplanet_around_b_stars</h3>
+<p><code>def all_exoplanet_around_b_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95f95stars">Routine all_exoplanet_around_f_stars</h3>
+<p><code>def all_exoplanet_around_f_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95g95stars">Routine all_exoplanet_around_g_stars</h3>
+<p><code>def all_exoplanet_around_g_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95k95stars">Routine all_exoplanet_around_k_stars</h3>
+<p><code>def all_exoplanet_around_k_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95m95stars">Routine all_exoplanet_around_m_stars</h3>
+<p><code>def all_exoplanet_around_m_stars()</code></p>
+<h3 id="routine-all95exoplanet95around95o95stars">Routine all_exoplanet_around_o_stars</h3>
+<p><code>def all_exoplanet_around_o_stars()</code></p>
+<h3 id="routine-all95hot95zone95planets">Routine all_hot_zone_planets</h3>
+<p><code>def all_hot_zone_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95jovian95planets">Routine all_jovian_planets</h3>
+<p><code>def all_jovian_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95microlensing95planets95with95time95series">Routine all_microlensing_planets_with_time_series</h3>
+<p><code>def all_microlensing_planets_with_time_series()</code></p>
+<h3 id="routine-all95neptunian95planets">Routine all_neptunian_planets</h3>
+<p><code>def all_neptunian_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95subterran95planets">Routine all_subterran_planets</h3>
+<p><code>def all_subterran_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95superterran95planets">Routine all_superterran_planets</h3>
+<p><code>def all_superterran_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95terran95planets">Routine all_terran_planets</h3>
+<p><code>def all_terran_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95trappist95planets">Routine all_trappist_planets</h3>
+<p><code>def all_trappist_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-all95unconfirmed95planets">Routine all_unconfirmed_planets</h3>
+<p><code>def all_unconfirmed_planets()</code></p>
+<h3 id="routine-all95warm95zone95planets">Routine all_warm_zone_planets</h3>
+<p><code>def all_warm_zone_planets()</code></p>
+<p>:return: </p>
+<h3 id="routine-confirmed95planets95in95kepler95field">Routine confirmed_planets_in_kepler_field</h3>
+<p><code>def confirmed_planets_in_kepler_field()</code></p>
+<h3 id="routine-confirmed95planets95in95mission95star95list">Routine confirmed_planets_in_mission_star_list</h3>
+<p><code>def confirmed_planets_in_mission_star_list()</code></p>
+<h3 id="routine-confirmed95planets95that95transit95host95stars">Routine confirmed_planets_that_transit_host_stars</h3>
+<p><code>def confirmed_planets_that_transit_host_stars()</code></p>
+<h3 id="routine-exoplanet95by95class">Routine exoplanet_by_class</h3>
+<p><code>def exoplanet_by_class(planet_class)</code></p>
+<p>valid classes are "jovian", "neptunian", "superterran", "terran", and "subterran".</p>
+<p>:param planet_class: str
+:return: </p>
+<h3 id="routine-exoplanet95by95distance">Routine exoplanet_by_distance</h3>
+<p><code>def exoplanet_by_distance(max_parsecs)</code></p>
+<p>Get all exoplanets up to x parsecs
+:param max_parsecs:
+:return: </p>
+<h3 id="routine-exoplanet95by95esi">Routine exoplanet_by_esi</h3>
+<p><code>def exoplanet_by_esi(esi)</code></p>
+<p>:param esi:
+:return: </p>
+<h3 id="routine-exoplanet95by95mass">Routine exoplanet_by_mass</h3>
+<p><code>def exoplanet_by_mass(max_jovian_masses)</code></p>
+<p>Get all exoplanets with up to x Jovian masses
+:param max_jovian_masses:
+:return: </p>
+<h3 id="routine-exoplanet95by95name">Routine exoplanet_by_name</h3>
+<p><code>def exoplanet_by_name(name)</code></p>
+<p>:param name:
+:return: </p>
+<h3 id="routine-exoplanet95by95radius">Routine exoplanet_by_radius</h3>
+<p><code>def exoplanet_by_radius(max_jovian_raddi)</code></p>
+<p>Get all exoplanets with up to x Jovian raddi
+:param max_jovian_raddi:
+:return: </p>
+<h3 id="routine-exoplanet95by95star95type">Routine exoplanet_by_star_type</h3>
+<p><code>def exoplanet_by_star_type(star_type)</code></p>
+<p>valid star types are, o, b, a, f, g, k, m
+:param star_type: str
+:return: </p>
+<h3 id="routine-exoplanet95by95zone">Routine exoplanet_by_zone</h3>
+<p><code>def exoplanet_by_zone(zone)</code></p>
+<p>Valid zones are "hot", "warm" and "cold" "subterran".</p>
+<p>:param zone: str
+:return: </p>
+<h3 id="routine-k295targets95campaign9">Routine k2_targets_campaign9</h3>
+<p><code>def k2_targets_campaign9()</code></p>
+<h3 id="routine-planetary95candidates">Routine planetary_candidates</h3>
+<p><code>def planetary_candidates(max_radius=2, max_temperature=303, min_temperature=180)</code></p>
+<h3 id="routine-search95exoplanet">Routine search_exoplanet</h3>
+<p><code>def search_exoplanet(query, table='exoplanets')</code></p>
+<p>https://exoplanetarchive.ipac.caltech.edu/docs/program_interfaces.html</p>
+<p>The Exoplanet Archive API allows programatic access to NASA's Exoplanet Archive database.
+This API contains a ton of options so to get started please visit this page for introductory materials.
+To see what data is available in this API visit here and also be sure to check out best-practices and troubleshooting in case you get stuck. Happy planet hunting!</p>
+<p>you can also specify "atropical" table to use Exoplanets API (experimental)
+This simple API queries the exoplanet catalog the of Observatoire de Paris in France.</p>
+<p>:return: </p>
+<h3 id="routine-stars95known95to95host95exoplanets">Routine stars_known_to_host_exoplanets</h3>
+<p><code>def stars_known_to_host_exoplanets()</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../space.bodies.earth/" class="btn btn-neutral float-right" title="earth">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../space.sun/" class="btn btn-neutral" title="sun"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../space.sun/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../space.bodies.earth/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
