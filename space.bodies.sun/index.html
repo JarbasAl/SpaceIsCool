@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>research - space</title>
+  <title>sun - space</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "research";
-    var mkdocs_page_input_path = "space.research.md";
+    var mkdocs_page_name = "sun";
+    var mkdocs_page_input_path = "space.bodies.sun.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -69,9 +69,23 @@
                     
     <a class="" href="../space.bodies.earth/">earth</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../space.bodies.sun/">sun</a>
+    <a class="current" href="./">sun</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#module-spacebodiessun">Module space.bodies.sun</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recent95sunspots">recent_sunspots</a></li>
+        
+            <li><a class="toctree-l4" href="#sunspot95count">sunspot_count</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -128,43 +142,9 @@
 		
     <span class="caption-text">research</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">research</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#module-spaceresearch">Module space.research</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#search95patents">search_patents</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#module-spaceresearchgenelab">Module space.research.genelab</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#search95genelab">search_genelab</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#module-spaceresearchspacex">Module space.research.spacex</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#capsules">capsules</a></li>
-        
-            <li><a class="toctree-l4" href="#launches">launches</a></li>
-        
-            <li><a class="toctree-l4" href="#rockets">rockets</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../space.research/">research</a>
                 </li>
                 <li class="">
                     
@@ -199,11 +179,11 @@
     
       
         
-          <li>research &raquo;</li>
+          <li>bodies &raquo;</li>
         
       
     
-    <li>research</li>
+    <li>sun</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -213,41 +193,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="module-spaceresearch">Module space.research</h2>
-<h3 id="search95patents">search_patents</h3>
-<p><code>def search_patents(query)</code></p>
-<p>The NASA patent portfolio is available to benefit US citizens. Through partnerships and licensing agreements with industry, these patents ensure that NASA’s investments in pioneering research find secondary uses that benefit the economy, create jobs, and improve quality of life. This endpoint provides structured, searchable developer access to NASA’s patents that have been curated to support technology transfer.</p>
-<p>HTTP REQUEST</p>
-<p>GET https://api.nasa.gov/patents</p>
-<p>QUERY PARAMETERS</p>
-<p>Parameter   Type    Default Description</p>
-<p>query       string  None    Search text to filter results</p>
-<p>concept_tags        bool    False   Return an ordered dictionary of concepts from the patent abstract</p>
-<p>limit       int     all     number of patents to return</p>
-<p>api_key     string  DEMO_KEY        api.nasa.gov key for expanded usage</p>
-<p>:param query:</p>
+                <h2 id="module-spacebodiessun">Module space.bodies.sun</h2>
+<h3 id="recent95sunspots">recent_sunspots</h3>
+<p><code>def recent_sunspots()</code></p>
+<p>World Data Center for the production, preservation and dissemination of the international sunspot number</p>
+<p>For more information on the data, visit http://www.sidc.be/silso/datafiles and look at the Daily Estimated Sunspot Number.</p>
 <p>:return: </p>
-<h2 id="module-spaceresearchgenelab">Module space.research.genelab</h2>
-<h3 id="search95genelab">search_genelab</h3>
-<p><code>def search_genelab(query, type)</code></p>
-<p>GeneLab provides a RESTful Application Programming Interface (API) to its full-text search_exoplanet capability,</p>
-<p>which provides the same functionality available through the GeneLab public data repository website.</p>
-<p>The API provides a choice of standardized web output formats, such as JavaScript Object Notation (JSON)</p>
-<p>or Hyper Text Markup Language (HTML), of the search_exoplanet results. The GeneLab Search API can also</p>
-<p>federate with other heterogeneous external bioinformatics databases, such as the</p>
-<p>National Institutes of Health (NIH) / National Center for Biotechnology Information's (NCBI)</p>
-<p>Gene Expression Omnibus (GEO); the European Bioinformatics Institute's (EBI)</p>
-<p>Proteomics Identification (PRIDE); the Argonne National Laboratory's (ANL)</p>
-<p>Metagenomics Rapid Annotations using Subsystems Technology (MG-RAST).</p>
-<p>:param query:</p>
+<h3 id="sunspot95count">sunspot_count</h3>
+<p><code>def sunspot_count()</code></p>
+<p>World Data Center for the production, preservation and dissemination of the international sunspot number</p>
+<p>For more information on the data, visit http://www.sidc.be/silso/datafiles and look at the Daily Estimated Sunspot Number.</p>
 <p>:return: </p>
-<h2 id="module-spaceresearchspacex">Module space.research.spacex</h2>
-<h3 id="capsules">capsules</h3>
-<p><code>def capsules()</code></p>
-<h3 id="launches">launches</h3>
-<p><code>def launches()</code></p>
-<h3 id="rockets">rockets</h3>
-<p><code>def rockets()</code></p>
               
             </div>
           </div>
@@ -255,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../space.research.spacex/" class="btn btn-neutral float-right" title="spacex">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../space.bodies.stars/" class="btn btn-neutral float-right" title="stars">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../space.satellites.landsat8/" class="btn btn-neutral" title="landsat8"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../space.bodies.earth/" class="btn btn-neutral" title="earth"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -284,10 +240,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../space.satellites.landsat8/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../space.bodies.earth/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../space.research.spacex/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../space.bodies.stars/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
