@@ -2,21 +2,18 @@ import requests
 
 
 def search_exoplanet(query, table="exoplanets"):
-    """
+    '''
     https://exoplanetarchive.ipac.caltech.edu/docs/program_interfaces.html
 
-        The Exoplanet Archive API allows programatic access to NASA's Exoplanet Archive database.
-        This API contains a ton of options so to get started please visit this page for introductory materials.
-         To see what data is available in this API visit here and also be sure to check out best-practices
-         and troubleshooting in case you get stuck. Happy planet hunting!
+    The Exoplanet Archive API allows programatic access to NASA's Exoplanet Archive database.
+    This API contains a ton of options so to get started please visit this page for introductory materials.
+    To see what data is available in this API visit here and also be sure to check out best-practices and troubleshooting in case you get stuck. Happy planet hunting!
 
-OR if astropical
-
-    Exoplanets API (experimental)
+    you can also specify "atropical" table to use Exoplanets API (experimental)
     This simple API queries the exoplanet catalog the of Observatoire de Paris in France.
 
-        :return:
-        """
+    :return:
+    '''
     base_url = "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=" + table
     if table == "astropical":
         base_url = "http://www.astropical.space/astrodb/api-exo.php?"
@@ -77,89 +74,89 @@ def k2_targets_campaign9():
 
 
 def exoplanet_by_mass(max_jovian_masses):
-    """
+    '''
     Get all exoplanets with up to x Jovian masses
     :param max_jovian_masses:
     :return:
-    """
+    '''
     query = "which=mass&limit=" + str(max_jovian_masses)
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_name(name):
-    """
+    '''
     :param name:
     :return:
-    """
+    '''
     query = "which=name&limit=" + name
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_radius(max_jovian_raddi):
-    """
+    '''
     Get all exoplanets with up to x Jovian raddi
     :param max_jovian_raddi:
     :return:
-    """
+    '''
     query = "which=radius&limit=" + str(max_jovian_raddi)
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_distance(max_parsecs):
-    """
+    '''
     Get all exoplanets up to x parsecs
     :param max_parsecs:
     :return:
-    """
+    '''
     query = "which=distance&limit=" + str(max_parsecs)
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_esi(esi):
-    """
+    '''
     :param esi:
     :return:
-    """
+    '''
     query = "which=esi&limit=" + str(esi)
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_star_type(star_type):
-    """
+    '''
     valid star types are, o, b, a, f, g, k, m
-    :param star_type: str  m , g ...
+    :param star_type: str
     :return:
-    """
+    '''
     query = "which=spectral&limit=" + star_type
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_class(planet_class):
-    """
+    '''
     valid classes are "jovian", "neptunian", "superterran", "terran", and "subterran".
 
     :param planet_class: str
     :return:
-    """
+    '''
     query = "which=class&limit=" + planet_class
     return search_exoplanet(query, table="astropical")
 
 
 def exoplanet_by_zone(zone):
-    """
+    '''
     Valid zones are "hot", "warm" and "cold" "subterran".
 
     :param zone: str
     :return:
-    """
+    '''
     query = "which=class&limit=" + zone
     return search_exoplanet(query, table="astropical")
 
 
 def all_trappist_planets():
-    """
+    '''
     :return:
-    """
+    '''
     query = "which=name&limit=trappist"
     return search_exoplanet(query, table="astropical")
 

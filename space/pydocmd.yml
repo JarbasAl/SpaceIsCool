@@ -1,9 +1,25 @@
-site_name: Space Is Cool
+site_name: space
 generate:
+gens_dir: ../_build/pydocmd
+site_dir: ../_build/site
 pages:
-- Home: index.md << ../README.md
-- space: ../docs/space.md
-- bodies: ../docs/bodies.md
-- satellites: ../docs/satellites.md
-- research: ../docs/research.md
-- imagery: ../docs/imagery.md
+- Home: index.md << ../readme.md
+- bodies:
+  - bodies: space.bodies.md << ../docs/space/bodies/space.bodies.md
+  - exoplanets: space.bodies.exoplanets.md << ../docs/space/bodies/exoplanets/space.bodies.exoplanets.md
+  - earth: space.bodies.earth.md << ../docs/space/bodies/earth/space.bodies.earth.md
+  - sun: space.bodies.sun.md << ../docs/space/bodies/sun/space.bodies.sun.md
+  - stars: space.bodies.stars.md << ../docs/space/bodies/stars/space.bodies.stars.md
+  - asteroids: space.bodies.asteroids.md << ../docs/space/bodies/asteroids/space.bodies.asteroids.md
+- imagery:
+  - imagery: space.imagery.md << ../docs/space/imagery/space.imagery.md
+- astronomy: space.astronomy.md << ../docs/space/astronomy/space.astronomy.md
+- weather: space.weather.md << ../docs/space/weather/space.weather.md
+- satellites:
+  - satellites: space.satellites.md << ../docs/space/satellites/space.satellites.md
+  - EPIC: space.satellites.EPIC.md << ../docs/space/satellites/EPIC/space.satellites.EPIC.md
+  - landsat8: space.satellites.landsat8.md << ../docs/space/satellites/landsat8/space.satellites.landsat8.md
+- research:
+  - research: space.research.md << ../docs/space/research/space.research.md
+  - spacex: space.research.spacex.md << ../docs/space/research/spacex/space.research.spacex.md
+  - genelab: space.research.genelab.md << ../docs/space/research/genelab/space.research.genelab.md
