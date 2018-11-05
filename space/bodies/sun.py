@@ -47,3 +47,6 @@ def sunspot_count():
         chngcomment = " up a lot "
 
     data = {'spotcount': spfields[4], 'stations': spfields[7], 'spcomment': chngcomment}
+    return data
+
+print(sunspot_count())

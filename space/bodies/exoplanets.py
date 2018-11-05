@@ -21,12 +21,12 @@ def search_exoplanet(query, table="exoplanets"):
     if not query.startswith("&"):
         query = "&" + query
     url = base_url + query + "&format=json"
-    response = requests.get(url).json()
-    return response
+    response = requests.get(url)
+    return response.json()
 
 
 def all_confirmed_planets():
-    query = "where=*"
+    query = ""
     return search_exoplanet(query)
 
 

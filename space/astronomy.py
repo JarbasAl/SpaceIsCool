@@ -2,7 +2,7 @@ import requests
 import decimal
 
 
-def space_events(lon=None, lat=None, limit=None, date=None, elevation=None):
+def space_events(lon, lat, limit=None, date=None, elevation=None):
     '''
     http://api.predictthesky.org
     lat & lon expect decimal latitude and longitude values. (Required)
@@ -12,9 +12,6 @@ def space_events(lon=None, lat=None, limit=None, date=None, elevation=None):
     '''
 
     base_url = 'http://api.predictthesky.org/?'
-
-    lon = decimal.Decimal(lon)
-    lat = decimal.Decimal(lat)
 
     base_url += "lon=" + str(lon) + "&" + "lat=" + str(lat)
 
